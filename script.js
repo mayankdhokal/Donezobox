@@ -35,3 +35,10 @@ function addtask(){
     listContainer.innerHTML= localStorage.getItem("data");
  }
  showTask();
+
+ inputBox.addEventListener("keypress",function(e){
+    if (e.key === "Enter"){
+        addtask();
+
+    }
+ });
