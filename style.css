@@ -86,7 +86,7 @@ ul li.checked{
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(doneicon4.png);
+    background-image: url(doneicon.png);
 
 }
 ul li span{
