@@ -1,57 +1,66 @@
-* body{
-    font-family: 'Lilita+One' , sans-serif;
+/* General body styling */
+* body {
+    font-family: 'Lilita+One', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     background-image: url(bg3.JPG);
     padding: 10px;
+    padding-bottom: 400px; 
+    position: relative; 
 }
-  
-.TODO-APP{
-    width: 100% ;
+
+.TODO-APP {
+    width: 100%;
     max-width: 525px;
     background: rgb(197, 197, 176);
     margin: 60px auto 20px;
-    padding: 15px 30px 70px ;
+    padding: 15px 30px 70px;
     border-radius: 30px;
+    position: relative;
+    z-index: 2; 
 }
-.TODO-APP h2{
-   color:#002765 ;
-   display: flex ;
-   align-items: center ;
-   margin-bottom: 20px ;
-   margin-left: 100px;
-   font-family: 'Playwrite BR Guides', sans-serif;
+
+.TODO-APP h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    font-family: 'Playwrite BR Guides', sans-serif;
     font-size: 2rem;
     color: #333;
 }
-.TODO-APP h2 img{
-    width: 140px ;
-    margin-left: 10px ; 
-    
+
+.TODO-APP h2 img {
+    width: 140px;
+    margin-left: 10px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgb(242, 242, 233);
     border-radius: 30px;
     padding-left: 20px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
-input{
+
+input {
     flex: 1;
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
 }
-button{
+
+button {
     border: none;
     outline: none;
     padding: 10px;
@@ -61,47 +70,68 @@ button{
     cursor: pointer;
     border-radius: 30px;
 }
-ul li{
+
+ul li {
     list-style: none;
-    font-size : 16px ;
+    font-size: 16px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
 }
-ul li::before{
+
+ul li::before {
     content: "";
     position: absolute;
     height: 28px;
     width: 28px;
-    border-radius: 50% ;
+    border-radius: 50%;
     background-image: url(icon3.png);
     background-size: cover;
     background-position: center;
     top: 12px;
     left: 8px;
 }
-ul li.checked{
+
+ul li.checked {
     color: #333;
     text-decoration: line-through;
 }
-ul li.checked::before{
-    background-image: url(doneicon.png);
 
+ul li.checked::before {
+    background-image: url(doneicon.png);
 }
-ul li span{
-  position: absolute;
-  right: 0;
-  top: 5px;
-  width: 40px ;
-  height: 40px;
-  font-size: 22px;
-  color:rgb(205, 83, 11);
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(205, 83, 11);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
 }
-ul li span:hover{
-background: #edeef0;
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    padding: 20px;
+    z-index: 1; 
+}
+
+.image-container img {
+    width: 350px;   
+    height: 350px;  
+    object-fit: cover; 
 }
 
